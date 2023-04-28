@@ -9,7 +9,7 @@
 # Imagens
 
 ![tabela](https://user-images.githubusercontent.com/49947689/235044276-71e0cae2-9d34-4d77-ab0a-c8c9ffafb3b2.png)
-![table](https://user-images.githubusercontent.com/49947689/235044297-0d8b04da-5849-453c-b3c1-b6ec16c9d7ef.png)
+![tabela_completa](https://user-images.githubusercontent.com/49947689/235044641-8982c0f7-a3cf-4ef4-8d9f-87951cd30c45.png)
 ![grafico](https://user-images.githubusercontent.com/49947689/235044310-633e6b22-adc2-4be1-85ea-e8a64b4c3720.png)
 
 
@@ -117,4 +117,4 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
 [⬆ Voltar ao topo](performance-evaluation-analysis)<br>
-![tabela](https://user-images.githubusercontent.com/49947689/235044235-6aa324f3-fd58-4074-bd4f-58ea0c4078c5.png)
+
