@@ -8,9 +8,10 @@
 
 # Imagens
 
-![tabela_geral](path/to/file)
-![tabela_completa](path/to/file)
-![gráfico](path/to/file)
+![tabela](https://user-images.githubusercontent.com/49947689/235044276-71e0cae2-9d34-4d77-ab0a-c8c9ffafb3b2.png)
+![table](https://user-images.githubusercontent.com/49947689/235044297-0d8b04da-5849-453c-b3c1-b6ec16c9d7ef.png)
+![grafico](https://user-images.githubusercontent.com/49947689/235044310-633e6b22-adc2-4be1-85ea-e8a64b4c3720.png)
+
 
 > Este projeto permite a visualização e análise das avaliações de desempenho dos membros da equipe, separando-os entre Assistentes e Seniors. Utiliza-se o Streamlit como interface para a exibição dos dados, permitindo uma interação amigável e intuitiva. O projeto se conecta a um banco de dados para obter as informações das avaliações e processa os dados para serem exibidos corretamente.
 
@@ -116,3 +117,4 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
 [⬆ Voltar ao topo](performance-evaluation-analysis)<br>
+![tabela](https://user-images.githubusercontent.com/49947689/235044235-6aa324f3-fd58-4074-bd4f-58ea0c4078c5.png)
