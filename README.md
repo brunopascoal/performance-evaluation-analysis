@@ -5,6 +5,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/brunopascoal/performance-evaluation-analysis?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/brunopascoal/performance-evaluation-analysis?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/brunopascoal/performance-evaluation-analysis?style=for-the-badge)
+> Este projeto permite a visualização e análise das avaliações de desempenho dos membros da equipe, separando-os entre Assistentes e Seniors. Utiliza-se o Streamlit como interface para a exibição dos dados, permitindo uma interação amigável e intuitiva. O projeto se conecta a um banco de dados para obter as informações das avaliações e processa os dados para serem exibidos corretamente.
 
 # Imagens
 
@@ -13,7 +14,7 @@
 ![grafico](https://user-images.githubusercontent.com/49947689/235044310-633e6b22-adc2-4be1-85ea-e8a64b4c3720.png)
 
 
-> Este projeto permite a visualização e análise das avaliações de desempenho dos membros da equipe, separando-os entre Assistentes e Seniors. Utiliza-se o Streamlit como interface para a exibição dos dados, permitindo uma interação amigável e intuitiva. O projeto se conecta a um banco de dados para obter as informações das avaliações e processa os dados para serem exibidos corretamente.
+
 
 ### Ajustes e melhorias
 
