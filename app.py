@@ -11,28 +11,30 @@ def exibir_tabela_grafico_streamlit(df, titulo):
     st.title(titulo)
 
     avaliados = df['avaliado'].unique()
-    for avaliado in avaliados:
-        st.header(f"Avaliado: {avaliado}")
-        df_avaliado = df[df['avaliado'] == avaliado]
-        st.dataframe(df_avaliado[['Pergunta', 'Nota Real', 'Pesos', 'Ponto Real', 'Porcentagem Real']])
-        
-        # Crie um dataframe com as colunas desejadas e um rótulo "Tipo"
-        df_notas = df_avaliado[['Pergunta', 'Nota Real', 'Nota desejada']].melt(id_vars='Pergunta', var_name='Tipo', value_name='Nota')
-        
-        grafico = (
-            alt.Chart(df_notas)
-            .mark_bar()
-            .encode(
-                x=alt.X("Pergunta:O", sort=None, axis=alt.Axis(title=None)),
-                y=alt.Y("Nota:Q", axis=alt.Axis(title="Nota")),
-                color=alt.Color("Tipo:N", scale=alt.Scale(scheme="category10")),
-                tooltip=['Pergunta', 'Tipo', 'Nota']
-            )
-            .properties(width=600, height=400)
-            .facet(column="Tipo:N")
-        )
+    
+    avaliado_selecionado = st.selectbox('Selecione o Avaliado:', avaliados)
 
-        st.altair_chart(grafico, use_container_width=True)
+    df_avaliado = df[df['avaliado'] == avaliado_selecionado]
+    
+    st.header(f"Avaliado: {avaliado_selecionado}")
+    st.dataframe(df_avaliado[['Pergunta', 'Nota Real', 'Pesos', 'Ponto Real', 'Porcentagem Real']])
+    
+    df_notas = df_avaliado[['Pergunta', 'Nota Real', 'Nota desejada']].melt(id_vars='Pergunta', var_name='Tipo', value_name='Nota')
+    
+    grafico = (
+        alt.Chart(df_notas)
+        .mark_bar()
+        .encode(
+            x=alt.X("Pergunta:O", sort=None, axis=alt.Axis(title=None)),
+            y=alt.Y("Nota:Q", axis=alt.Axis(title="Nota")),
+            color=alt.Color("Tipo:N", scale=alt.Scale(scheme="category10")),
+            tooltip=['Pergunta', 'Tipo', 'Nota'],
+            column='Tipo:N'  # Cria uma coluna para cada "Tipo"
+        )
+        .properties(width=600, height=400)
+    )
+
+    st.altair_chart(grafico, use_container_width=True)
 
 
 def main():

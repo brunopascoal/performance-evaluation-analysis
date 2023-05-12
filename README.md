@@ -89,7 +89,7 @@ create_connection = {
 2.Execute o script principal:
 
 ```
-streamlit run main.py
+streamlit run app.py
 
 ```
 

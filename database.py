@@ -2,11 +2,11 @@ import pymysql
 import pandas as pd
 
 def create_connection():
-    host = 'host_here'
+    host = ''
     port = 3306
-    user = "user_here"
-    password = "password_here"
-    database = "database_here"
+    user = ""
+    password = ""
+    database = ""
 
     connection = pymysql.connect(
         host=host,
@@ -21,8 +21,8 @@ def create_connection():
 
 
 def get_data(connection):
-    query = """query_sql_here"""
-
+    query = """query"""
+# Pesquisar sobre SQL Injection
     with connection.cursor() as cursor:
         cursor.execute(query)
         columns = [i[0] for i in cursor.description]
